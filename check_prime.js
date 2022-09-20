@@ -1,14 +1,20 @@
-
-let N=13;
-let C = 0;
-
-for(let i=1;i<N;i++){
-    if(N%i==0){
-        count++;
+function checkPrimeNumber(number) {
+  let count = 0;
+  for (let i = 1; i <= number; i++) {
+    if (number % i == 0) {
+      count++;
     }
-    if(count==2){
-        console.log("Prime");
-    }else{
-        console.log("Not";)
-    }
+  }
+  if (count == 2) {
+    return true;
+  }
+  return false;
+}
+
+let res=checkPrimeNumber(31);
+
+if(res==true){
+    console.log("Prime");
+}else{
+    console.log("Not Prime");
 }
