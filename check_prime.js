@@ -1,14 +1,14 @@
 
-let N=13;
-let C = 0;
+let number=13;
+let factor = 0;
 
-for(let i=1;i<N;i++){
-    if(N%i==0){
-        count++;
+for(let i=1;i<=number;i++){
+    if(number%i==0){
+        factor++;
     }
-    if(count==2){
-        console.log("Prime");
-    }else{
-        console.log("Not";)
-    }
+}
+if(factor==2){
+    console.log("Prime");
+}else{
+    console.log("Not Prime");
 }
