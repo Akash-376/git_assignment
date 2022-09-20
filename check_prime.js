@@ -10,7 +10,6 @@ function checkPrimeNumber(number) {
   }
   return false;
 }
-
 let res=checkPrimeNumber(31);
 
 if(res==true){
